@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #00008b;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    position: absolute;
+    width: 636px;
+    height: 175px;
+    left: 193px;
+    top: 224px;
+    font-family: 'Instrument Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #111273;
+}
+
+.hero h1 {
+    font-size: inherit;
+    color: inherit;
+}
+
+.hero p {
+    font-size: 24px;
+    color: #6a5acd;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #6a5acd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #5a4acd;
+}
+
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@700&display=swap');
