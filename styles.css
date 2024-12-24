@@ -1,9 +1,12 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Instrument Sans', sans-serif;
+    color: #111273;
     background-color: #ffffff;
-    color: #000000;
+    position: relative;
+    width: 1280px;
+    height: 832px;
 }
 
 /* Header Styles */
@@ -11,69 +14,136 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px 50px;
     background-color: #ffffff;
+    margin-right: 0px;
 }
 
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
+.logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-header nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #00008b;
-    font-weight: bold;
+.icon {
+    font-size: 25px;
+    color: #111273;
 }
 
-header nav a:hover {
+.logo-text {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #111273;
+}
+
+.nav-link {
+    position: absolute;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #111273;
+    text-decoration: none;
+}
+
+.nav-link:nth-child(1) {
+    left: 486px;
+    top: 25px;
+    width: 75px;
+}
+
+.nav-link:nth-child(2) {
+    left: 722px;
+    top: 25px;
+    width: 170px;
+}
+
+.nav-link:nth-child(3) {
+    left: 1036px;
+    top: 25px;
+    width: 125px;
+}
+
+.nav-link:nth-child(4) {
+    left: 1400px;
+    top: 25px;
+    width: 100px;
+}
+
+.nav-link:hover {
     text-decoration: underline;
 }
 
-/* Hero Section Styles */
+/* Hero Section */
 .hero {
-    text-align: center;
-    position: absolute;
-    width: 636px;
-    height: 175px;
-    left: 193px;
-    top: 224px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 193px;
+    text-align: left;
+    gap: 5px;
+    margin-top: 50px;
+}
+
+.hero-title {
+    width: 643px;
     font-family: 'Instrument Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 78px;
     color: #111273;
+    margin: 0px;
 }
 
-.hero h1 {
-    font-size: inherit;
-    color: inherit;
+.hero-subtitle {
+    width: 900px;
+    font-family: 'Instrument Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: #9E9CE1;
+    margin-top: 2px;
+    margin-bottom: 15px;
 }
 
-.hero p {
-    font-size: 24px;
-    color: #6a5acd;
+.cta {
+    display: flex;
+    position: relative;
+    width: 219px;
+    height: 47px;
+    background: #9E9CE1;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
 }
 
-.hero button {
-    margin-top: 20px;
-    padding: 15px 30px;
-    font-size: 18px;
-    color: #ffffff;
-    background-color: #6a5acd;
+.cta-button {
+    font-family: 'Instrument Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #111273;
+    background: none;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    top: 0px;
 }
 
-.hero button:hover {
-    background-color: #5a4acd;
+.cta-button:hover {
+    text-decoration: underline;
 }
 
-/* Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@700&display=swap');
+.key-icon {
+    position: absolute;
+    width: 42px;
+    height: 40px;
+    left: 171px;
+    top: 36px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    border: 3px solid #000000;
+}
